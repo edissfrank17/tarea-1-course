@@ -1,0 +1,16 @@
+title: tarea 1
+description: Prueba de github
+template:
+  repo: tarea-1-template
+  name: tarea-1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
